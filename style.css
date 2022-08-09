@@ -36,7 +36,7 @@ body {
 .main {
     display: grid;
     grid-gap: .2rem;
-    width: min(500px, 90%, 400px);
+    width: min(500px, 95%, 400px);
     height: 500px;
     margin: auto;
 }
