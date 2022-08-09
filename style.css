@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap');
+
+:root {
+    --color-primary: hsl(10, 79%, 65%);
+    --color-text2: hsl(28, 10%, 53%);
+    --color-text1: hsl(25, 47%, 15%);
+    --color-highest: hsl(186, 34%, 60%);
+    ;
+    --color-text: hsl(33, 100%, 98%);
+    --color-background: hsl(27, 66%, 92%);
+    --small-text: 1.8rem;
+    --big-text: 2rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    display: flex;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.main {
+    display: grid;
+    grid-gap: .2rem;
+    width: min(500px, 100%, 400px);
+    height: 500px;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--color-primary);
+    border-radius: 2.4rem;
+    width: 100%;
+    height: min(100px, 100%);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__text {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.balance {
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--color-background);
+}
+
+.total {
+    font-weight: 700;
+    color: var(--color-text);
+    font-size: var(--big-text);
+}
+
+.data__body {
+    background-color: var(--color-text);
+    height: 350px;
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.body__text {
+    font-size: var(--big-text);
+    color: var(--color-text1);
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+hr {
+    border: 1px solid var(--color-background);
+}
+
+.datanalyse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.datanalyse .total .text,
+.text {
+    color: var(--color-text2);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.body__text {
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+
+.smalltext {
+    color: var(--color-text1);
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100%;
+    padding: 2rem;
+}
+
+.body1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 1rem;
+    height: 100%;
+    position: relative;
+}
+
+.body1 .text {
+    justify-self: start;
+    position: absolute;
+    bottom: 0;
+}
+
+.graph {
+    position: absolute;
+    bottom: 2rem;
+    padding: 0rem 1.8rem;
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.tolltip {
+    position: absolute;
+    color: var(--color-text);
+    padding: 2px;
+    text-align: center;
+    width: 35px;
+    height: 18px;
+    border-radius: 3.1px;
+    background-color: var(--color-text1);
+    z-index: 20;
+    display: none;
+    transition: all .2s ease-in;
+}
+
+.graph1 {
+    height: 17%;
+}
+
+.graph2 {
+    height: 30%;
+}
+
+.graph3 {
+    height: 100%;
+}
+
+.graph4 {
+    height: 40%;
+}
+
+.graph5 {
+    height: 25%;
+}
+
+.graph6 {
+    height: 20%;
+}
+
+.graph7 {
+    height: 30%;
+}
+
+.graph:hover {
+    opacity: .6;
+}
+
+@media only screen and (max-width:324px) {
+    html {
+        font-size: 50%
+    }
+}
