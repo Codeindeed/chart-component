@@ -39,7 +39,7 @@ function createGraph(data) {
       body1.classList.add("body1");
       let graph = document.createElement("div");
       graph.classList.add("graph");
-      graph.classList.add(`graph${i + 1}`);
+      graph.style.height = `${data.amount}%`;
       if (data.amount === highest) {
         graph.style.backgroundColor = "hsl(186, 34%, 60%)";
       }
@@ -48,7 +48,7 @@ function createGraph(data) {
       span.textContent = `$${data.amount}`;
       let text = document.createElement("p");
       text.classList.add("text");
-      text.textContent = data.day;
+      text.textContent = data.day.toUpperCase();
       body1.append(graph, span, text);
       container.appendChild(body1);
     });

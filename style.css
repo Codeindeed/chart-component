@@ -161,35 +161,6 @@ hr {
     display: none;
     transition: all .2s ease-in;
 }
-
-.graph1 {
-    height: 17%;
-}
-
-.graph2 {
-    height: 30%;
-}
-
-.graph3 {
-    height: 100%;
-}
-
-.graph4 {
-    height: 40%;
-}
-
-.graph5 {
-    height: 25%;
-}
-
-.graph6 {
-    height: 20%;
-}
-
-.graph7 {
-    height: 30%;
-}
-
 .graph:hover {
     opacity: .6;
 }
