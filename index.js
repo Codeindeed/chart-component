@@ -1,5 +1,4 @@
 const container = document.querySelector(".data");
-const balanceTotal = document.querySelector(".total");
 function toolTip(graphs) {
   graphs.forEach((graph) => {
     graph.addEventListener("mousemove", (e) => {
@@ -31,8 +30,6 @@ function createGraph(data) {
       return mov;
     }
   });
-  let balance = total.reduce((acc, mov) => acc + mov);
-  balanceTotal.textContent = `$${balance}`;
   if (data !== " ") {
     data.forEach((data, i) => {
       let body1 = document.createElement("div");
@@ -56,7 +53,6 @@ function createGraph(data) {
     toolTip(graphs);
   }
 }
-
 async function datas() {
   let obj = await fetch("./data.json");
   let data = await obj.json();
